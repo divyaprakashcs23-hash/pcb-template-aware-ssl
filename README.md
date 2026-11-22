@@ -1,134 +1,106 @@
 # Label-Efficient PCB Defect Detection via Template-Aware Self-Supervised Pretraining
 
-Deep Learning course project on the [DeepPCB](https://github.com/tangsanli5201/DeepPCB) dataset.
+Deep Learning Experiential Learning (EL) project, RV College of Engineering, Bengaluru.
 
-**Question.** Does contrastive pretraining on unlabelled PCB patches let a defect detector reach
-good accuracy with a fraction of the labelled boxes? And does using the defect-free template,
-which every automated optical inspection line already has, make that pretraining better?
+| | |
+|---|---|
+| **Student** | Divya Prakash (USN 1RV23CS310) |
+| **Guide** | Prof. Rajatha |
+| **Department** | Computer Science and Engineering |
+| **Course** | Deep Learning |
+| **Dataset** | [DeepPCB](https://github.com/tangsanli5201/DeepPCB) (1,500 aligned PCB image pairs, 6 defect classes) |
+| **Draft paper** | [reports/paper/Draft_Paper_Template_Aware_SSL_PCB.pdf](reports/paper/Draft_Paper_Template_Aware_SSL_PCB.pdf) |
+| **Slides** | [reports/DL_EL_Presentation.pptx](reports/DL_EL_Presentation.pptx) |
 
-**Headline deliverable.** One plot of detection mAP against label fraction, one line per
-initialisation: `reports/figures/det_label_efficiency.png`. All numbers are in
-[`reports/RESULTS.md`](reports/RESULTS.md), which is regenerated from the run folders.
+## Problem
 
-## Method in one paragraph
+Labelling bounding boxes for PCB defects is slow and expensive, while automated optical inspection
+(AOI) lines produce thousands of unlabelled board images every day. This project asks two questions:
 
-A ResNet-18 encoder is pretrained with SimCLR on about 79k unlabelled 64 by 64 patches cut from the
-training boards. The proposed **template-aware SimCLR** uses the aligned defect-free template in
-two ways, guided by a label-free difference map between the tested image and the template.
-Where the two agree, the template crop is an extra positive view. Where they differ, the template
-crop is added as a **hard negative**, because the only thing separating it from the anchor is the
-defect. A naive variant that always uses the template as a positive is kept as an ablation: it
-asks the encoder to ignore defects, and it should hurt. Stage A fine-tunes each encoder as a
-seven-class patch classifier. Stage B loads the same weights into a Faster R-CNN with a
-ResNet-18 FPN backbone. Four initialisations are compared at several label fractions: random,
-ImageNet, SimCLR and template-aware SimCLR.
+1. Can self-supervised contrastive pretraining on unlabelled PCB patches let a defect detector reach
+   high accuracy with only a fraction of the labelled images?
+2. Can the defect-free **template** image, which every AOI line already has, make that pretraining better?
+
+## Approach
+
+* A ResNet-18 encoder is pretrained with **SimCLR** on 79,295 unlabelled 64x64 patches cut from the training boards.
+* **Template-aware SimCLR (proposed):** a label-free difference map between the tested image and its
+  aligned template decides, for each patch, how the template crop is used.
+  * Where the two agree, the template crop is an extra **positive** view.
+  * Where they differ, the template crop is a **hard negative**, because the only thing separating it
+    from the anchor is the defect itself.
+* The pretrained encoder is then transferred to
+  * **Stage A:** a seven-class patch classifier (fine-tuned, and a frozen linear probe), and
+  * **Stage B:** a Faster R-CNN detector with a ResNet-18 FPN backbone.
+* Four initialisations are compared under an identical protocol at several label fractions:
+  random, ImageNet, plain SimCLR and template-aware SimCLR.
+
+## Key results
+
+Test mAP@0.5 of the detector on the official DeepPCB test split (500 images):
+
+| Initialisation | 10% labels | 25% labels | 100% labels |
+|---|---|---|---|
+| Random init | 0.895 | 0.934 | 0.956 |
+| ImageNet | 0.912 | 0.950 | **0.973** |
+| SimCLR (PCB) | 0.935 | 0.954 | 0.967 |
+| Template-aware SimCLR (ours) | **0.939** | **0.960** | 0.971 |
+
+* With only 25% of the labelled images, template-aware SimCLR already beats a randomly initialised
+  detector trained on 100% of the labels.
+* On the frozen linear probe, template-aware SimCLR is best at every label fraction
+  (macro F1 0.818 vs 0.533 for ImageNet with 2% of the labels).
+* A naive ablation that always uses the template as a positive makes the encoder blind to defects and hurts.
+* Results hold on the 332 test boards from board designs never seen in training.
+
+![Detection label efficiency](reports/figures/det_label_efficiency.png)
+
+All tables and figures are in [reports/RESULTS.md](reports/RESULTS.md); it is regenerated from the run folders.
 
 ## Repository layout
 
 ```
-src/pcbssl/
-  config.py              paths, class names, constants
-  data/deeppcb.py        DeepPCB parser, official test split, stratified validation split
-  data/sampler.py        seeded, nested, group-stratified label-fraction sampler
-  data/patches.py        patch extraction, label-free difference maps, caches
-  data/augment.py        batched GPU augmentations (per-sample random parameters)
-  models/encoder.py      ResNet-18 with random / ImageNet / checkpoint init, patch classifier
-  models/simclr.py       SimCLR, NT-Xent with per-anchor template hard negatives
-  models/detector.py     Faster R-CNN ResNet-18 FPN with small anchors
-  engine/pretrain.py     contrastive pretraining with kNN monitor and resume
-  engine/classify.py     Stage A fine-tuning and linear probe
-  engine/detect.py       Stage B detection training and evaluation
-  eval/metrics.py        macro F1, VOC AP, mAP@0.5, mAP@0.5:0.95, DeepPCB F-score
-  eval/gradcam.py        Grad-CAM
-scripts/
-  prepare_data.py        download DeepPCB, build splits and patch caches, dataset figures
-  pretrain.py            one pretraining run
-  train_classifier.py    one Stage A run
-  train_detector.py      one Stage B run
-  run_experiments.py     the full resumable grid
-  make_report.py         tables, figures and reports/RESULTS.md
-app/demo.py              Gradio demo: detection plus patch Grad-CAM
-tests/test_core.py       unit tests for sampler, box transforms, loss and metrics
+src/pcbssl/          Python package: data pipeline, models, training engines, metrics, Grad-CAM
+scripts/             prepare_data, pretrain, train_classifier, train_detector, run_experiments, make_report
+app/demo.py          Gradio demo: board-level detection plus patch Grad-CAM
+tests/test_core.py   unit tests for the sampler, box transforms, loss and metrics
+runs/                metrics.json of every experiment (model weights are not committed, too large)
+reports/             RESULTS.md, figures, slide deck and the draft paper
 ```
 
-## Setup
+## How to run
 
-Windows, Python 3.10 or newer, an NVIDIA GPU recommended (developed on an RTX 4070 Laptop, 8 GB).
+Windows, Python 3.10+, NVIDIA GPU recommended (developed on an RTX 4070 Laptop, 8 GB).
 
 ```bash
 python -m venv .venv
-```
-
-```bash
 .venv\Scripts\activate
-```
-
-```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
-```
-
-```bash
 pip install -r requirements.txt
-```
-
-```bash
 pip install -e .
 ```
 
-## Reproduce everything
-
 ```bash
-python scripts/prepare_data.py --download
+python scripts/prepare_data.py --download   # clones DeepPCB (~220 MB) and builds the patch caches
+python scripts/run_experiments.py           # full grid; resumable, add --quick for a 5-minute smoke run
+python scripts/make_report.py               # tables, figures and reports/RESULTS.md
+python app/demo.py                          # interactive demo
+python -m pytest -q                         # unit tests
 ```
 
-```bash
-python scripts/run_experiments.py
-```
+## Experimental protocol in brief
 
-```bash
-python scripts/make_report.py
-```
+* Official DeepPCB test split; 100 validation images (stratified by board group) used only for model selection.
+* Label fractions are taken per image, nested and stratified by board group. Stage A: 2, 10, 25, 100% with 3 seeds. Stage B: 10, 25, 100%.
+* Pretraining: ResNet-18, 60 epochs, batch 512, AdamW 1e-3, cosine schedule, temperature 0.2.
+* Stage B: Faster R-CNN R18-FPN, small anchors (16 to 256 px), 2,500 iterations, batch 8, SGD 0.01.
+* Only the starting weights change between arms; architecture, augmentation, schedule and seeds are identical.
 
-```bash
-python app/demo.py
-```
+## References
 
-`prepare_data.py` clones DeepPCB (about 220 MB) into `data/raw/` and writes caches to
-`data/processed/`. `run_experiments.py` skips any run whose `metrics.json` already exists, so it can
-be stopped and restarted. Use `--stage pretrain|cls|det|ablation|linear` to run one stage and
-`--quick` for a five-minute smoke version of the whole pipeline.
+1. S. Tang, F. He, X. Huang, J. Yang, "Online PCB Defect Detector On A New PCB Defect Dataset", arXiv:1902.06197, 2019.
+2. T. Chen, S. Kornblith, M. Norouzi, G. Hinton, "A Simple Framework for Contrastive Learning of Visual Representations", ICML 2020.
+3. S. Ren, K. He, R. Girshick, J. Sun, "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks", NeurIPS 2015.
+4. J. Robinson, C.-Y. Chuang, S. Sra, S. Jegelka, "Contrastive Learning with Hard Negative Samples", ICLR 2021.
 
-```bash
-python -m pytest -q
-```
-
-## Experimental protocol
-
-| Item | Setting |
-|---|---|
-| Test set | Official DeepPCB test split, 500 images. 332 of them come from 4 board groups absent from training, reported separately as unseen designs. |
-| Validation | 10% of trainval, stratified by board group, used only for model selection |
-| Label fractions | Image-level, nested, stratified by group. Stage A: 2, 10, 25, 100%. Stage B: 10, 25, 100%. |
-| Seeds | Stage A: 3 seeds. Stage B: 1 seed. |
-| Pretraining | ResNet-18, 60 epochs, batch 512, AdamW 1e-3, cosine, temperature 0.2, fp16 |
-| Stage A | 1500 steps regardless of fraction, batch 256, AdamW 5e-4, class-weighted CE, best validation macro F1 |
-| Stage B | Faster R-CNN R18-FPN, anchors 16 to 256, 2500 iterations, batch 8, SGD 0.01, dihedral augmentation, best validation mAP@0.5 |
-| Fairness | Same architecture, normalisation, augmentation, schedule and seeds for every initialisation. Only the starting weights change. |
-
-## Syllabus coverage
-
-| Syllabus topic | Where it appears |
-|---|---|
-| Convolutional networks | ResNet-18 encoder, `models/encoder.py` |
-| Transfer learning and fine-tuning | ImageNet and self-supervised initialisations, full fine-tuning vs linear probe |
-| Data augmentation | GPU random resized crop, dihedral group, blur, noise, `data/augment.py` |
-| Self-supervised contrastive learning | SimCLR, NT-Xent, template-aware hard negatives, `models/simclr.py` |
-| Object detection | Faster R-CNN, RPN, FPN, anchor design, `models/detector.py` |
-| Class imbalance | 2:1 background ratio, inverse square-root class weights, macro F1 |
-| Interpretability | Grad-CAM on layer3, `eval/gradcam.py`, t-SNE of embeddings |
-| Evaluation methodology | Held-out test, validation-only model selection, seeds, nested label fractions, unseen-design split, mAP and F-score |
-
-## Data licence
-
-DeepPCB is released by its authors for research use only. Cite: Tang et al., *Online PCB Defect
-Detector On A New PCB Defect Dataset*, arXiv:1902.06197.
+DeepPCB is released by its authors for research use only.
