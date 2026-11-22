@@ -116,7 +116,7 @@
       "val_macro_f1": 0.9054108572482518
     }
   ],
-  "init": "C:\\Users\\divya\\Desktop\\DL EL\\runs\\pretrain\\simclr\\encoder.pt",
+  "init": "<project>\\runs\\pretrain\\simclr\\encoder.pt",
   "fraction": 0.02,
   "seed": 0,
   "mode": "finetune",

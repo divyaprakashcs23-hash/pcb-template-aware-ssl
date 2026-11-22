@@ -116,7 +116,7 @@
       "val_macro_f1": 0.9863638663583932
     }
   ],
-  "init": "C:\\Users\\divya\\Desktop\\DL EL\\runs\\pretrain\\template_aware\\encoder.pt",
+  "init": "<project>\\runs\\pretrain\\template_aware\\encoder.pt",
   "fraction": 0.25,
   "seed": 2,
   "mode": "finetune",

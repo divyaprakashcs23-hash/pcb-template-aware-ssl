@@ -129,10 +129,10 @@
 05:08:19 [cls] init=imagenet frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 05:10:37 [cls] done val_f1=0.9202 test_f1=0.9182 acc=0.9613 (137.3s)
 05:10:37 start cls finetune simclr f=0.02 s=0
-05:10:38 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+05:10:38 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 05:13:04 [cls] done val_f1=0.9128 test_f1=0.9113 acc=0.9584 (145.4s)
 05:13:04 start cls finetune template_aware f=0.02 s=0
-05:13:06 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+05:13:06 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 05:15:32 [cls] done val_f1=0.9306 test_f1=0.9263 acc=0.9625 (146.0s)
 05:15:32 start cls finetune random f=0.02 s=1
 05:15:33 [cls] init=random frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
@@ -141,10 +141,10 @@
 05:18:14 [cls] init=imagenet frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 05:20:46 [cls] done val_f1=0.8977 test_f1=0.8944 acc=0.9407 (151.4s)
 05:20:46 start cls finetune simclr f=0.02 s=1
-05:20:48 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+05:20:48 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 05:23:12 [cls] done val_f1=0.8853 test_f1=0.8782 acc=0.9356 (143.9s)
 05:23:12 start cls finetune template_aware f=0.02 s=1
-05:23:13 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+05:23:13 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 05:25:35 [cls] done val_f1=0.8890 test_f1=0.8880 acc=0.9363 (141.2s)
 05:25:35 start cls finetune random f=0.02 s=2
 05:25:36 [cls] init=random frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
@@ -153,10 +153,10 @@
 05:27:59 [cls] init=imagenet frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 05:30:11 [cls] done val_f1=0.9281 test_f1=0.9282 acc=0.9633 (131.6s)
 05:30:11 start cls finetune simclr f=0.02 s=2
-05:30:12 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+05:30:12 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 05:32:36 [cls] done val_f1=0.9331 test_f1=0.9258 acc=0.9613 (143.4s)
 05:32:36 start cls finetune template_aware f=0.02 s=2
-05:32:38 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+05:32:38 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 05:34:58 [cls] done val_f1=0.9371 test_f1=0.9270 acc=0.9632 (139.9s)
 05:34:58 start cls finetune random f=0.1 s=0
 05:34:59 [cls] init=random frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
@@ -165,10 +165,10 @@
 05:37:27 [cls] init=imagenet frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 05:39:56 [cls] done val_f1=0.9773 test_f1=0.9750 acc=0.9868 (148.9s)
 05:39:56 start cls finetune simclr f=0.1 s=0
-05:39:57 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+05:39:57 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 05:42:16 [cls] done val_f1=0.9769 test_f1=0.9721 acc=0.9857 (138.1s)
 05:42:16 start cls finetune template_aware f=0.1 s=0
-05:42:17 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+05:42:17 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 05:44:35 [cls] done val_f1=0.9805 test_f1=0.9742 acc=0.9862 (137.3s)
 05:44:35 start cls finetune random f=0.1 s=1
 05:44:36 [cls] init=random frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
@@ -177,10 +177,10 @@
 05:46:52 [cls] init=imagenet frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 05:49:15 [cls] done val_f1=0.9723 test_f1=0.9754 acc=0.9866 (142.9s)
 05:49:15 start cls finetune simclr f=0.1 s=1
-05:49:17 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+05:49:17 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 05:51:33 [cls] done val_f1=0.9745 test_f1=0.9681 acc=0.9835 (135.4s)
 05:51:33 start cls finetune template_aware f=0.1 s=1
-05:51:34 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+05:51:34 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 05:53:59 [cls] done val_f1=0.9739 test_f1=0.9675 acc=0.9829 (144.6s)
 05:53:59 start cls finetune random f=0.1 s=2
 05:54:01 [cls] init=random frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
@@ -189,10 +189,10 @@
 05:56:33 [cls] init=imagenet frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 05:59:07 [cls] done val_f1=0.9687 test_f1=0.9712 acc=0.9843 (153.6s)
 05:59:07 start cls finetune simclr f=0.1 s=2
-05:59:09 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+05:59:09 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 06:01:37 [cls] done val_f1=0.9750 test_f1=0.9663 acc=0.9810 (148.2s)
 06:01:37 start cls finetune template_aware f=0.1 s=2
-06:01:39 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+06:01:39 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 06:04:04 [cls] done val_f1=0.9711 test_f1=0.9666 acc=0.9821 (145.3s)
 06:04:04 start cls finetune random f=0.25 s=0
 06:04:06 [cls] init=random frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
@@ -201,10 +201,10 @@
 06:06:29 [cls] init=imagenet frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 06:08:51 [cls] done val_f1=0.9898 test_f1=0.9770 acc=0.9875 (141.4s)
 06:08:51 start cls finetune simclr f=0.25 s=0
-06:08:52 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+06:08:52 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 06:11:09 [cls] done val_f1=0.9873 test_f1=0.9791 acc=0.9894 (137.2s)
 06:11:09 start cls finetune template_aware f=0.25 s=0
-06:11:11 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+06:11:11 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 06:13:34 [cls] done val_f1=0.9844 test_f1=0.9782 acc=0.9881 (143.3s)
 06:13:34 start cls finetune random f=0.25 s=1
 06:13:36 [cls] init=random frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
@@ -213,10 +213,10 @@
 06:16:07 [cls] init=imagenet frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 06:18:37 [cls] done val_f1=0.9857 test_f1=0.9810 acc=0.9896 (149.6s)
 06:18:37 start cls finetune simclr f=0.25 s=1
-06:18:39 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+06:18:39 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 06:21:08 [cls] done val_f1=0.9853 test_f1=0.9772 acc=0.9876 (149.2s)
 06:21:08 start cls finetune template_aware f=0.25 s=1
-06:21:10 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+06:21:10 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 06:23:36 [cls] done val_f1=0.9870 test_f1=0.9787 acc=0.9893 (145.9s)
 06:23:36 start cls finetune random f=0.25 s=2
 06:23:38 [cls] init=random frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
@@ -225,10 +225,10 @@
 06:25:58 [cls] init=imagenet frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 06:28:20 [cls] done val_f1=0.9856 test_f1=0.9811 acc=0.9894 (141.7s)
 06:28:20 start cls finetune simclr f=0.25 s=2
-06:28:21 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+06:28:21 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 06:30:44 [cls] done val_f1=0.9835 test_f1=0.9810 acc=0.9901 (142.7s)
 06:30:44 start cls finetune template_aware f=0.25 s=2
-06:30:45 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+06:30:45 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 06:33:09 [cls] done val_f1=0.9864 test_f1=0.9770 acc=0.9879 (143.4s)
 06:33:09 start cls finetune random f=1.0 s=0
 06:33:11 [cls] init=random frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -237,10 +237,10 @@
 06:35:41 [cls] init=imagenet frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:38:08 [cls] done val_f1=0.9941 test_f1=0.9867 acc=0.9924 (147.3s)
 06:38:08 start cls finetune simclr f=1.0 s=0
-06:38:09 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+06:38:09 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:40:37 [cls] done val_f1=0.9930 test_f1=0.9841 acc=0.9917 (147.7s)
 06:40:37 start cls finetune template_aware f=1.0 s=0
-06:40:39 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+06:40:39 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:43:03 [cls] done val_f1=0.9926 test_f1=0.9846 acc=0.9918 (144.5s)
 06:43:04 start cls finetune random f=1.0 s=1
 06:43:05 [cls] init=random frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -249,10 +249,10 @@
 06:45:33 [cls] init=imagenet frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:48:00 [cls] done val_f1=0.9943 test_f1=0.9858 acc=0.9920 (147.2s)
 06:48:00 start cls finetune simclr f=1.0 s=1
-06:48:02 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+06:48:02 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:50:33 [cls] done val_f1=0.9941 test_f1=0.9823 acc=0.9906 (151.3s)
 06:50:33 start cls finetune template_aware f=1.0 s=1
-06:50:34 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+06:50:34 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:53:01 [cls] done val_f1=0.9929 test_f1=0.9840 acc=0.9912 (146.8s)
 06:53:01 start cls finetune random f=1.0 s=2
 06:53:03 [cls] init=random frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -261,10 +261,10 @@
 06:55:43 [cls] init=imagenet frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 06:58:18 [cls] done val_f1=0.9925 test_f1=0.9844 acc=0.9916 (154.9s)
 06:58:18 start cls finetune simclr f=1.0 s=2
-06:58:19 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+06:58:19 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 07:00:51 [cls] done val_f1=0.9912 test_f1=0.9851 acc=0.9921 (151.1s)
 07:00:51 start cls finetune template_aware f=1.0 s=2
-07:00:52 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+07:00:52 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 07:03:32 [cls] done val_f1=0.9925 test_f1=0.9842 acc=0.9915 (158.9s)
 07:03:32 start det random f=0.1 s=0
 07:03:35 [det] init=random frac=0.1 seed=0 | 92 train images, 655 boxes
@@ -283,7 +283,7 @@
 07:41:17 [det] {'iter': 2500, 'loss': 0.09497492019832134, 'val_mAP50': 0.9257953672305935, 'time_s': 1117.4}
 07:41:32 [det] done val_mAP50=0.9275 test_mAP50=0.9116 deeppcb_F33=0.8952 (1132.5s)
 07:41:32 start det simclr f=0.1 s=0
-07:41:33 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
+07:41:33 [det] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
 07:45:22 [det] {'iter': 500, 'loss': 0.49178329575061797, 'val_mAP50': 0.9155623239127438, 'time_s': 228.8}
 07:48:54 [det] {'iter': 1000, 'loss': 0.2596233676970005, 'val_mAP50': 0.926678309077071, 'time_s': 441.1}
 07:52:22 [det] {'iter': 1500, 'loss': 0.18431217807531358, 'val_mAP50': 0.9345959277981498, 'time_s': 648.7}
@@ -291,7 +291,7 @@
 07:59:42 [det] {'iter': 2500, 'loss': 0.12335169287025928, 'val_mAP50': 0.9355818991738506, 'time_s': 1089.0}
 07:59:58 [det] done val_mAP50=0.9356 test_mAP50=0.9349 deeppcb_F33=0.8941 (1104.1s)
 07:59:58 start det template_aware f=0.1 s=0
-07:59:58 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
+07:59:58 [det] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
 08:03:59 [det] {'iter': 500, 'loss': 0.4887418000400066, 'val_mAP50': 0.9238966786271389, 'time_s': 240.5}
 08:07:45 [det] {'iter': 1000, 'loss': 0.27304642501473425, 'val_mAP50': 0.9392881968389863, 'time_s': 466.5}
 08:11:15 [det] {'iter': 1500, 'loss': 0.19246431866288186, 'val_mAP50': 0.9516019801937926, 'time_s': 676.0}
@@ -315,7 +315,7 @@
 08:55:00 [det] {'iter': 2500, 'loss': 0.16069796741008757, 'val_mAP50': 0.9673570459333725, 'time_s': 1056.8}
 08:55:14 [det] done val_mAP50=0.9686 test_mAP50=0.9500 deeppcb_F33=0.9234 (1069.8s)
 08:55:14 start det simclr f=0.25 s=0
-08:55:15 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
+08:55:15 [det] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
 08:58:47 [det] {'iter': 500, 'loss': 0.5102569904327393, 'val_mAP50': 0.9217571684741307, 'time_s': 212.4}
 09:02:19 [det] {'iter': 1000, 'loss': 0.31064483571052554, 'val_mAP50': 0.9540559297390536, 'time_s': 424.0}
 09:05:45 [det] {'iter': 1500, 'loss': 0.24321829745173454, 'val_mAP50': 0.9658993869323641, 'time_s': 630.1}
@@ -323,7 +323,7 @@
 09:12:24 [det] {'iter': 2500, 'loss': 0.18531244736909866, 'val_mAP50': 0.9672022458808365, 'time_s': 1029.0}
 09:12:38 [det] done val_mAP50=0.9690 test_mAP50=0.9539 deeppcb_F33=0.9193 (1042.8s)
 09:12:38 start det template_aware f=0.25 s=0
-09:12:39 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
+09:12:39 [det] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
 09:16:07 [det] {'iter': 500, 'loss': 0.5021195225715637, 'val_mAP50': 0.9240524738092413, 'time_s': 207.9}
 09:19:39 [det] {'iter': 1000, 'loss': 0.3162326894104481, 'val_mAP50': 0.9551131366958394, 'time_s': 419.9}
 09:22:52 [det] {'iter': 1500, 'loss': 0.25171892914175986, 'val_mAP50': 0.9653569488730153, 'time_s': 612.6}
@@ -347,7 +347,7 @@
 10:09:50 [det] {'iter': 2500, 'loss': 0.23691411644220353, 'val_mAP50': 0.9814958741728023, 'time_s': 1309.3}
 10:10:08 [det] done val_mAP50=0.9815 test_mAP50=0.9735 deeppcb_F33=0.9418 (1327.9s)
 10:10:08 start det simclr f=1.0 s=0
-10:10:10 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
+10:10:10 [det] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
 10:14:41 [det] {'iter': 500, 'loss': 0.5341222872138023, 'val_mAP50': 0.9219169780738531, 'time_s': 270.4}
 10:19:50 [det] {'iter': 1000, 'loss': 0.36500567719340327, 'val_mAP50': 0.9620296509796971, 'time_s': 579.3}
 10:24:11 [det] {'iter': 1500, 'loss': 0.3129605947732925, 'val_mAP50': 0.9749406335102452, 'time_s': 840.6}
@@ -355,7 +355,7 @@
 10:32:21 [det] {'iter': 2500, 'loss': 0.25817173668742177, 'val_mAP50': 0.9746095445301961, 'time_s': 1330.4}
 10:32:37 [det] done val_mAP50=0.9773 test_mAP50=0.9669 deeppcb_F33=0.9344 (1346.1s)
 10:32:37 start det template_aware f=1.0 s=0
-10:32:39 [det] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
+10:32:39 [det] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
 10:37:51 [det] {'iter': 500, 'loss': 0.5258141261339188, 'val_mAP50': 0.924754232994208, 'time_s': 312.1}
 10:43:15 [det] {'iter': 1000, 'loss': 0.3698604234457016, 'val_mAP50': 0.9657703918696453, 'time_s': 635.7}
 10:48:50 [det] {'iter': 1500, 'loss': 0.3188288339972496, 'val_mAP50': 0.9740698227375263, 'time_s': 970.5}
@@ -425,40 +425,40 @@
 11:37:51 [pretrain:template_pos] epoch=59 loss=4.4296 pos_acc=0.2652 time_s=2587.4000
 11:38:40 [pretrain:template_pos] epoch=60 loss=4.4233 pos_acc=0.2689 time_s=2636.4000 knn_acc=0.8783 knn_macro_f1=0.7751
 11:38:41 start cls finetune template_pos f=0.02 s=0
-11:38:41 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+11:38:41 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 11:40:34 [cls] done val_f1=0.8670 test_f1=0.8736 acc=0.9402 (113.2s)
 11:40:34 start cls finetune template_pos f=0.02 s=1
-11:40:35 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+11:40:35 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=1 mode=finetune | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 11:42:28 [cls] done val_f1=0.8262 test_f1=0.8029 acc=0.8898 (113.3s)
 11:42:28 start cls finetune template_pos f=0.02 s=2
-11:42:29 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+11:42:29 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=2 mode=finetune | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 11:44:23 [cls] done val_f1=0.8989 test_f1=0.8985 acc=0.9487 (114.3s)
 11:44:23 start cls finetune template_pos f=0.1 s=0
-11:44:24 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+11:44:24 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 11:46:15 [cls] done val_f1=0.9734 test_f1=0.9685 acc=0.9832 (111.5s)
 11:46:15 start cls finetune template_pos f=0.1 s=1
-11:46:16 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+11:46:16 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=1 mode=finetune | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 11:48:07 [cls] done val_f1=0.9671 test_f1=0.9604 acc=0.9787 (111.6s)
 11:48:07 start cls finetune template_pos f=0.1 s=2
-11:48:08 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+11:48:08 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=2 mode=finetune | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 11:49:58 [cls] done val_f1=0.9699 test_f1=0.9640 acc=0.9809 (110.0s)
 11:49:58 start cls finetune template_pos f=0.25 s=0
-11:49:58 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+11:49:58 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 11:51:48 [cls] done val_f1=0.9880 test_f1=0.9738 acc=0.9860 (109.4s)
 11:51:48 start cls finetune template_pos f=0.25 s=1
-11:51:49 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+11:51:49 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=1 mode=finetune | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 11:53:39 [cls] done val_f1=0.9833 test_f1=0.9745 acc=0.9863 (110.5s)
 11:53:39 start cls finetune template_pos f=0.25 s=2
-11:53:40 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+11:53:40 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=2 mode=finetune | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 11:55:30 [cls] done val_f1=0.9788 test_f1=0.9744 acc=0.9866 (109.8s)
 11:55:30 start cls finetune template_pos f=1.0 s=0
-11:55:30 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+11:55:30 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 11:57:20 [cls] done val_f1=0.9920 test_f1=0.9816 acc=0.9902 (110.2s)
 11:57:20 start cls finetune template_pos f=1.0 s=1
-11:57:21 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+11:57:21 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=1 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 11:59:11 [cls] done val_f1=0.9866 test_f1=0.9804 acc=0.9895 (110.5s)
 11:59:11 start cls finetune template_pos f=1.0 s=2
-11:59:12 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+11:59:12 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=2 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:01:13 [cls] done val_f1=0.9885 test_f1=0.9792 acc=0.9891 (121.0s)
 12:01:13 start cls linear random f=0.02 s=0
 12:01:14 [cls] init=random frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
@@ -467,13 +467,13 @@
 12:01:15 [cls] init=imagenet frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 12:01:16 [cls] done val_f1=0.5627 test_f1=0.5437 acc=0.6810 (0.6s)
 12:01:16 start cls linear simclr f=0.02 s=0
-12:01:16 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+12:01:16 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 12:01:17 [cls] done val_f1=0.8132 test_f1=0.8023 acc=0.8894 (0.6s)
 12:01:17 start cls linear template_aware f=0.02 s=0
-12:01:17 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+12:01:17 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 12:01:18 [cls] done val_f1=0.8523 test_f1=0.8291 acc=0.9056 (0.6s)
 12:01:18 start cls linear template_pos f=0.02 s=0
-12:01:18 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+12:01:18 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
 12:01:19 [cls] done val_f1=0.6204 test_f1=0.5958 acc=0.7324 (0.6s)
 12:01:19 start cls linear random f=0.02 s=1
 12:01:20 [cls] init=random frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
@@ -482,13 +482,13 @@
 12:01:21 [cls] init=imagenet frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 12:01:22 [cls] done val_f1=0.5128 test_f1=0.5141 acc=0.6363 (0.6s)
 12:01:22 start cls linear simclr f=0.02 s=1
-12:01:22 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+12:01:22 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 12:01:23 [cls] done val_f1=0.7911 test_f1=0.7612 acc=0.8657 (0.6s)
 12:01:23 start cls linear template_aware f=0.02 s=1
-12:01:23 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+12:01:23 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 12:01:24 [cls] done val_f1=0.8396 test_f1=0.8079 acc=0.8907 (0.6s)
 12:01:24 start cls linear template_pos f=0.02 s=1
-12:01:25 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
+12:01:25 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=1 mode=linear | 405 patches from 20 images | counts=[270, 21, 20, 33, 21, 21, 19]
 12:01:25 [cls] done val_f1=0.5890 test_f1=0.5925 acc=0.6975 (0.6s)
 12:01:25 start cls linear random f=0.02 s=2
 12:01:26 [cls] init=random frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
@@ -497,13 +497,13 @@
 12:01:27 [cls] init=imagenet frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 12:01:28 [cls] done val_f1=0.5367 test_f1=0.5409 acc=0.6935 (0.6s)
 12:01:28 start cls linear simclr f=0.02 s=2
-12:01:29 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+12:01:29 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 12:01:29 [cls] done val_f1=0.8056 test_f1=0.8082 acc=0.8916 (0.6s)
 12:01:29 start cls linear template_aware f=0.02 s=2
-12:01:30 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+12:01:30 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 12:01:30 [cls] done val_f1=0.8349 test_f1=0.8161 acc=0.8962 (0.6s)
 12:01:30 start cls linear template_pos f=0.02 s=2
-12:01:31 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
+12:01:31 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.02 seed=2 mode=linear | 432 patches from 20 images | counts=[288, 28, 27, 23, 25, 21, 20]
 12:01:32 [cls] done val_f1=0.6007 test_f1=0.6085 acc=0.7258 (0.6s)
 12:01:32 start cls linear random f=0.1 s=0
 12:01:32 [cls] init=random frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
@@ -512,13 +512,13 @@
 12:01:34 [cls] init=imagenet frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 12:01:35 [cls] done val_f1=0.6877 test_f1=0.6768 acc=0.7896 (0.9s)
 12:01:35 start cls linear simclr f=0.1 s=0
-12:01:35 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+12:01:35 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 12:01:36 [cls] done val_f1=0.9015 test_f1=0.8882 acc=0.9430 (0.9s)
 12:01:36 start cls linear template_aware f=0.1 s=0
-12:01:37 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+12:01:37 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 12:01:38 [cls] done val_f1=0.9194 test_f1=0.8971 acc=0.9468 (0.8s)
 12:01:38 start cls linear template_pos f=0.1 s=0
-12:01:38 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+12:01:38 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
 12:01:39 [cls] done val_f1=0.7569 test_f1=0.7307 acc=0.8374 (0.8s)
 12:01:39 start cls linear random f=0.1 s=1
 12:01:40 [cls] init=random frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
@@ -527,13 +527,13 @@
 12:01:41 [cls] init=imagenet frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 12:01:42 [cls] done val_f1=0.6667 test_f1=0.6595 acc=0.7755 (0.9s)
 12:01:42 start cls linear simclr f=0.1 s=1
-12:01:42 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+12:01:42 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 12:01:43 [cls] done val_f1=0.8936 test_f1=0.8721 acc=0.9331 (0.8s)
 12:01:43 start cls linear template_aware f=0.1 s=1
-12:01:44 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+12:01:44 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 12:01:45 [cls] done val_f1=0.8977 test_f1=0.8917 acc=0.9436 (0.8s)
 12:01:45 start cls linear template_pos f=0.1 s=1
-12:01:45 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
+12:01:45 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=1 mode=linear | 1923 patches from 92 images | counts=[1282, 120, 101, 130, 100, 90, 100]
 12:01:46 [cls] done val_f1=0.7338 test_f1=0.7253 acc=0.8304 (0.8s)
 12:01:46 start cls linear random f=0.1 s=2
 12:01:47 [cls] init=random frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
@@ -542,13 +542,13 @@
 12:01:48 [cls] init=imagenet frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 12:01:49 [cls] done val_f1=0.6711 test_f1=0.6452 acc=0.7682 (0.9s)
 12:01:49 start cls linear simclr f=0.1 s=2
-12:01:49 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+12:01:49 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 12:01:50 [cls] done val_f1=0.8975 test_f1=0.8857 acc=0.9395 (0.8s)
 12:01:50 start cls linear template_aware f=0.1 s=2
-12:01:51 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+12:01:51 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 12:01:52 [cls] done val_f1=0.9134 test_f1=0.9004 acc=0.9473 (0.8s)
 12:01:52 start cls linear template_pos f=0.1 s=2
-12:01:52 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
+12:01:52 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.1 seed=2 mode=linear | 1980 patches from 92 images | counts=[1320, 125, 105, 128, 108, 95, 99]
 12:01:53 [cls] done val_f1=0.7337 test_f1=0.7313 acc=0.8330 (0.8s)
 12:01:53 start cls linear random f=0.25 s=0
 12:01:54 [cls] init=random frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
@@ -557,13 +557,13 @@
 12:01:56 [cls] init=imagenet frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 12:01:57 [cls] done val_f1=0.7235 test_f1=0.7030 acc=0.8152 (1.4s)
 12:01:57 start cls linear simclr f=0.25 s=0
-12:01:58 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+12:01:58 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 12:01:59 [cls] done val_f1=0.9264 test_f1=0.9134 acc=0.9575 (1.2s)
 12:01:59 start cls linear template_aware f=0.25 s=0
-12:02:00 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+12:02:00 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 12:02:01 [cls] done val_f1=0.9416 test_f1=0.9208 acc=0.9601 (1.4s)
 12:02:01 start cls linear template_pos f=0.25 s=0
-12:02:02 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+12:02:02 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
 12:02:03 [cls] done val_f1=0.8008 test_f1=0.7819 acc=0.8704 (1.3s)
 12:02:03 start cls linear random f=0.25 s=1
 12:02:03 [cls] init=random frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
@@ -572,13 +572,13 @@
 12:02:05 [cls] init=imagenet frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 12:02:07 [cls] done val_f1=0.7138 test_f1=0.7135 acc=0.8199 (1.4s)
 12:02:07 start cls linear simclr f=0.25 s=1
-12:02:07 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+12:02:07 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 12:02:09 [cls] done val_f1=0.9229 test_f1=0.9026 acc=0.9525 (1.5s)
 12:02:09 start cls linear template_aware f=0.25 s=1
-12:02:09 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+12:02:09 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 12:02:11 [cls] done val_f1=0.9153 test_f1=0.9124 acc=0.9547 (1.4s)
 12:02:11 start cls linear template_pos f=0.25 s=1
-12:02:11 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
+12:02:11 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=1 mode=linear | 4704 patches from 228 images | counts=[3136, 298, 241, 311, 259, 226, 233]
 12:02:13 [cls] done val_f1=0.7889 test_f1=0.7673 acc=0.8599 (1.5s)
 12:02:13 start cls linear random f=0.25 s=2
 12:02:14 [cls] init=random frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
@@ -587,13 +587,13 @@
 12:02:16 [cls] init=imagenet frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 12:02:17 [cls] done val_f1=0.7222 test_f1=0.7064 acc=0.8154 (1.4s)
 12:02:17 start cls linear simclr f=0.25 s=2
-12:02:18 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+12:02:18 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 12:02:19 [cls] done val_f1=0.9265 test_f1=0.9132 acc=0.9564 (1.4s)
 12:02:19 start cls linear template_aware f=0.25 s=2
-12:02:20 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+12:02:20 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 12:02:21 [cls] done val_f1=0.9319 test_f1=0.9153 acc=0.9563 (1.5s)
 12:02:21 start cls linear template_pos f=0.25 s=2
-12:02:22 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
+12:02:22 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=0.25 seed=2 mode=linear | 4716 patches from 228 images | counts=[3144, 293, 247, 310, 265, 220, 237]
 12:02:23 [cls] done val_f1=0.7972 test_f1=0.7816 acc=0.8704 (1.4s)
 12:02:23 start cls linear random f=1.0 s=0
 12:02:24 [cls] init=random frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -602,13 +602,13 @@
 12:02:28 [cls] init=imagenet frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:02:33 [cls] done val_f1=0.7925 test_f1=0.7658 acc=0.8592 (4.2s)
 12:02:33 start cls linear simclr f=1.0 s=0
-12:02:33 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:02:33 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:02:37 [cls] done val_f1=0.9524 test_f1=0.9355 acc=0.9684 (4.1s)
 12:02:37 start cls linear template_aware f=1.0 s=0
-12:02:38 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:02:38 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:02:42 [cls] done val_f1=0.9505 test_f1=0.9422 acc=0.9715 (4.1s)
 12:02:42 start cls linear template_pos f=1.0 s=0
-12:02:42 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:02:42 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:02:46 [cls] done val_f1=0.8398 test_f1=0.8157 acc=0.8934 (3.8s)
 12:02:46 start cls linear random f=1.0 s=1
 12:02:47 [cls] init=random frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -617,13 +617,13 @@
 12:02:51 [cls] init=imagenet frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:02:55 [cls] done val_f1=0.7894 test_f1=0.7608 acc=0.8549 (3.9s)
 12:02:55 start cls linear simclr f=1.0 s=1
-12:02:56 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:02:56 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:00 [cls] done val_f1=0.9513 test_f1=0.9345 acc=0.9682 (3.8s)
 12:03:00 start cls linear template_aware f=1.0 s=1
-12:03:00 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:03:00 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:04 [cls] done val_f1=0.9494 test_f1=0.9341 acc=0.9667 (3.8s)
 12:03:04 start cls linear template_pos f=1.0 s=1
-12:03:04 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:03:04 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=1 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:08 [cls] done val_f1=0.8456 test_f1=0.8167 acc=0.8939 (3.8s)
 12:03:08 start cls linear random f=1.0 s=2
 12:03:09 [cls] init=random frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
@@ -632,12 +632,12 @@
 12:03:14 [cls] init=imagenet frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:17 [cls] done val_f1=0.7893 test_f1=0.7661 acc=0.8584 (3.9s)
 12:03:17 start cls linear simclr f=1.0 s=2
-12:03:18 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\simclr\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:03:18 [cls] init=<project>\runs\pretrain\simclr\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:22 [cls] done val_f1=0.9513 test_f1=0.9337 acc=0.9678 (3.8s)
 12:03:22 start cls linear template_aware f=1.0 s=2
-12:03:22 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:03:22 [cls] init=<project>\runs\pretrain\template_aware\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:26 [cls] done val_f1=0.9492 test_f1=0.9377 acc=0.9689 (3.8s)
 12:03:26 start cls linear template_pos f=1.0 s=2
-12:03:27 [cls] init=C:\Users\divya\Desktop\DL EL\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+12:03:27 [cls] init=<project>\runs\pretrain\template_pos\encoder.pt frac=1.0 seed=2 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
 12:03:31 [cls] done val_f1=0.8379 test_f1=0.8104 acc=0.8920 (3.9s)
 12:03:31 stage all finished

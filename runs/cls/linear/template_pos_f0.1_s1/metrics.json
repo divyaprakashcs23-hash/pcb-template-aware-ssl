@@ -84,7 +84,7 @@
     "seen": 0.758568983167715,
     "unseen": 0.710560939676535
   },
-  "init": "C:\\Users\\divya\\Desktop\\DL EL\\runs\\pretrain\\template_pos\\encoder.pt",
+  "init": "<project>\\runs\\pretrain\\template_pos\\encoder.pt",
   "fraction": 0.1,
   "seed": 1,
   "mode": "linear",

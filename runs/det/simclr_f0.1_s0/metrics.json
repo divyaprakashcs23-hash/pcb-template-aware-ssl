@@ -1,5 +1,5 @@
 {
-  "init": "C:\\Users\\divya\\Desktop\\DL EL\\runs\\pretrain\\simclr\\encoder.pt",
+  "init": "<project>\\runs\\pretrain\\simclr\\encoder.pt",
   "fraction": 0.1,
   "seed": 0,
   "iters": 2500,

@@ -4,7 +4,7 @@ Deep Learning Experiential Learning (EL) project, RV College of Engineering, Ben
 
 | | |
 |---|---|
-| **Student** | Divya Prakash (USN 1RV23CS310) |
+| **Student** | USN 1RV23CS310 |
 | **Guide** | Prof. Rajatha |
 | **Department** | Computer Science and Engineering |
 | **Course** | Deep Learning |

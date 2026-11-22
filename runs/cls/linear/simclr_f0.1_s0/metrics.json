@@ -84,7 +84,7 @@
     "seen": 0.8872046110515257,
     "unseen": 0.8886562929280704
   },
-  "init": "C:\\Users\\divya\\Desktop\\DL EL\\runs\\pretrain\\simclr\\encoder.pt",
+  "init": "<project>\\runs\\pretrain\\simclr\\encoder.pt",
   "fraction": 0.1,
   "seed": 0,
   "mode": "linear",

@@ -5,8 +5,8 @@ const path = require("path");
 const pptxgen = require("pptxgenjs");
 const { applyTheme } = require(process.env.PPTX_SKILL + "/scripts/apply_theme.js");
 
-const PROJ = "C:/Users/divya/Desktop/DL EL";
 const HERE = __dirname;
+const PROJ = path.resolve(HERE, "..");
 const OUT = path.join(PROJ, "reports", "DL_EL_Presentation.pptx");
 
 const stats = JSON.parse(fs.readFileSync(path.join(PROJ, "data/processed/stats.json"), "utf8"));
@@ -137,17 +137,15 @@ const fmt = n => n.toLocaleString("en-IN");
 
   s.addText([
     { text: "Submitted by", options: { bold: true, breakLine: true, color: H.accent4 } },
-    { text: "[Student Name 1]  USN [1RVxxxxxxx]", options: { breakLine: true } },
-    { text: "[Student Name 2]  USN [1RVxxxxxxx]", options: { breakLine: true } },
-    { text: "[Student Name 3]  USN [1RVxxxxxxx]" },
+    { text: "USN 1RV23CS310" },
   ], { x: 0.5, y: 4.1, w: 4.6, h: 1.3, fontSize: 12, color: H.lt1, isTextBox: true, margin: 0, valign: "top" });
   s.addText([
     { text: "Under the guidance of", options: { bold: true, breakLine: true, color: H.accent4 } },
-    { text: "[Faculty Name], [Designation]", options: { breakLine: true } },
-    { text: "Dept. of CSE / ISE, RVCE", options: { breakLine: true } },
+    { text: "Prof. Rajatha", options: { breakLine: true } },
+    { text: "Dept. of CSE, RVCE", options: { breakLine: true } },
     { text: "Academic year 2026-27" },
   ], { x: 5.4, y: 4.1, w: 4.1, h: 1.3, fontSize: 12, color: H.lt1, isTextBox: true, margin: 0, valign: "top" });
-  s.addNotes("Title slide. Replace the bracketed names, USNs and guide. Course code 21IS73GA is the RVCE 7th semester Deep Learning code from the published 2021 scheme (Professional Core Elective III, Group G, common to CS and IS); confirm against your own scheme PDF.");
+  s.addNotes("Title slide. Course code 21IS73GA is the RVCE 7th semester Deep Learning code from the published 2021 scheme (Professional Core Elective III, Group G, common to CS and IS); confirm against your own scheme PDF.");
 }
 
 // =========================================================================================
@@ -787,7 +785,7 @@ const nRuns = { ft: clsFT.length, lp: clsLP.length, det: det.length };
 // =========================================================================================
 {
   const s = slide("SECTION", "Thank you", null);
-  s.addText("Questions and discussion\nCode, caches and run logs: C:\\Users\\divya\\Desktop\\DL EL  (reproduce with prepare_data.py, run_experiments.py, make_report.py)", { placeholder: "body" });
+  s.addText("Questions and discussion\nCode: github.com/divyaprakashcs23-hash/pcb-template-aware-ssl  (reproduce with prepare_data.py, run_experiments.py, make_report.py)", { placeholder: "body" });
 }
 
 (async () => {
