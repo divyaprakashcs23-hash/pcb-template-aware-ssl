@@ -1,0 +1,190 @@
+02:22:33 start pretrain simclr
+02:22:34 [pretrain:simclr] 4096 patches | clean 78.4% | differs 16.0%
+02:22:39 [pretrain:simclr] epoch=1 loss=6.2594 pos_acc=0.0103 time_s=3.6000 knn_acc=0.8907 knn_macro_f1=0.8057
+02:22:39 start pretrain template_aware
+02:22:40 [pretrain:template_aware] 4096 patches | clean 78.4% | differs 16.0%
+02:22:43 [pretrain:template_aware] epoch=1 loss=6.2585 pos_acc=0.0093 time_s=2.3000 hard_gap=0.0438 knn_acc=0.8877 knn_macro_f1=0.8024
+02:22:43 start cls finetune random f=0.02 s=0
+02:22:44 [cls] init=random frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:22:48 [cls] done val_f1=0.7872 test_f1=0.7869 acc=0.8744 (4.2s)
+02:22:48 start cls finetune imagenet f=0.02 s=0
+02:22:49 [cls] init=imagenet frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:22:53 [cls] done val_f1=0.8484 test_f1=0.8522 acc=0.9333 (4.2s)
+02:22:53 start cls finetune simclr f=0.02 s=0
+02:22:53 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:22:58 [cls] done val_f1=0.7929 test_f1=0.8089 acc=0.8881 (4.2s)
+02:22:58 start cls finetune template_aware f=0.02 s=0
+02:22:58 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:23:03 [cls] done val_f1=0.8174 test_f1=0.8093 acc=0.8898 (4.2s)
+02:23:03 start cls finetune random f=0.1 s=0
+02:23:03 [cls] init=random frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:23:07 [cls] done val_f1=0.8473 test_f1=0.8309 acc=0.8889 (4.3s)
+02:23:07 start cls finetune imagenet f=0.1 s=0
+02:23:08 [cls] init=imagenet frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:23:12 [cls] done val_f1=0.9192 test_f1=0.9179 acc=0.9585 (4.4s)
+02:23:12 start cls finetune simclr f=0.1 s=0
+02:23:13 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:23:18 [cls] done val_f1=0.8538 test_f1=0.8487 acc=0.9013 (4.4s)
+02:23:18 start cls finetune template_aware f=0.1 s=0
+02:23:18 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:23:23 [cls] done val_f1=0.8468 test_f1=0.8466 acc=0.8984 (4.5s)
+02:23:23 start cls finetune random f=0.25 s=0
+02:23:23 [cls] init=random frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:23:28 [cls] done val_f1=0.8536 test_f1=0.8504 acc=0.9053 (4.5s)
+02:23:28 start cls finetune imagenet f=0.25 s=0
+02:23:28 [cls] init=imagenet frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:23:33 [cls] done val_f1=0.9365 test_f1=0.9303 acc=0.9619 (4.5s)
+02:23:33 start cls finetune simclr f=0.25 s=0
+02:23:34 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:23:39 [cls] done val_f1=0.8602 test_f1=0.8544 acc=0.9096 (5.1s)
+02:23:39 start cls finetune template_aware f=0.25 s=0
+02:23:40 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:23:44 [cls] done val_f1=0.8469 test_f1=0.8453 acc=0.9059 (4.7s)
+02:23:44 start cls finetune random f=1.0 s=0
+02:23:45 [cls] init=random frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:23:50 [cls] done val_f1=0.8524 test_f1=0.8265 acc=0.8937 (4.7s)
+02:23:50 start cls finetune imagenet f=1.0 s=0
+02:23:51 [cls] init=imagenet frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:23:56 [cls] done val_f1=0.9243 test_f1=0.9195 acc=0.9564 (4.9s)
+02:23:56 start cls finetune simclr f=1.0 s=0
+02:23:58 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:24:03 [cls] done val_f1=0.8514 test_f1=0.8262 acc=0.8930 (5.3s)
+02:24:03 start cls finetune template_aware f=1.0 s=0
+02:24:04 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:24:10 [cls] done val_f1=0.8546 test_f1=0.8299 acc=0.8970 (5.6s)
+02:24:10 start det random f=0.1 s=0
+02:24:13 [det] init=random frac=0.1 seed=0 | 92 train images, 655 boxes
+02:24:27 [det] {'iter': 20, 'loss': 0.9106919273734093, 'val_mAP50': 0.0002344114279417142, 'time_s': 13.3}
+02:24:44 [det] {'iter': 40, 'loss': 0.5274640247225761, 'val_mAP50': 0.01702194097493373, 'time_s': 30.7}
+02:25:14 [det] done val_mAP50=0.0170 test_mAP50=0.0102 deeppcb_F33=0.0334 (59.8s)
+02:25:14 start det imagenet f=0.1 s=0
+02:25:14 [det] init=imagenet frac=0.1 seed=0 | 92 train images, 655 boxes
+02:25:25 [det] {'iter': 20, 'loss': 0.9921683713793754, 'val_mAP50': 4.5443622390527454e-05, 'time_s': 9.7}
+02:25:38 [det] {'iter': 40, 'loss': 0.6047441139817238, 'val_mAP50': 0.057708852200157, 'time_s': 23.2}
+02:26:03 [det] done val_mAP50=0.0577 test_mAP50=0.0514 deeppcb_F33=0.0923 (48.1s)
+02:26:03 start det simclr f=0.1 s=0
+02:26:04 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
+02:26:16 [det] {'iter': 20, 'loss': 0.9136476814746857, 'val_mAP50': 0.000797226629170158, 'time_s': 11.8}
+02:26:32 [det] {'iter': 40, 'loss': 0.5283946886658668, 'val_mAP50': 0.011996794944822586, 'time_s': 27.5}
+02:26:55 [det] done val_mAP50=0.0120 test_mAP50=0.0075 deeppcb_F33=0.0377 (50.5s)
+02:26:55 start det template_aware f=0.1 s=0
+02:26:56 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.1 seed=0 | 92 train images, 655 boxes
+02:27:09 [det] {'iter': 20, 'loss': 0.9067124776542187, 'val_mAP50': 0.0, 'time_s': 11.9}
+02:27:29 [det] {'iter': 40, 'loss': 0.5133753344416618, 'val_mAP50': 0.010611714701911433, 'time_s': 32.6}
+02:27:56 [det] done val_mAP50=0.0106 test_mAP50=0.0053 deeppcb_F33=0.0306 (58.7s)
+02:27:56 start det random f=0.25 s=0
+02:27:57 [det] init=random frac=0.25 seed=0 | 228 train images, 1577 boxes
+02:28:11 [det] {'iter': 20, 'loss': 0.886508758366108, 'val_mAP50': 0.0014883990427807653, 'time_s': 14.1}
+02:28:42 [det] {'iter': 40, 'loss': 0.5354812145233154, 'val_mAP50': 0.01339262864919307, 'time_s': 45.2}
+02:29:08 [det] done val_mAP50=0.0134 test_mAP50=0.0068 deeppcb_F33=0.0392 (70.8s)
+02:29:08 start det imagenet f=0.25 s=0
+02:29:09 [det] init=imagenet frac=0.25 seed=0 | 228 train images, 1577 boxes
+02:29:23 [det] {'iter': 20, 'loss': 0.9802178353071213, 'val_mAP50': 2.098792975050287e-05, 'time_s': 13.3}
+02:29:38 [det] {'iter': 40, 'loss': 0.6156936019659043, 'val_mAP50': 0.046424242435951175, 'time_s': 28.4}
+02:29:59 [det] done val_mAP50=0.0464 test_mAP50=0.0487 deeppcb_F33=0.0911 (49.3s)
+02:29:59 start det simclr f=0.25 s=0
+02:30:00 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
+02:30:13 [det] {'iter': 20, 'loss': 0.886171892285347, 'val_mAP50': 0.002542242358008319, 'time_s': 12.5}
+02:30:27 [det] {'iter': 40, 'loss': 0.5387997016310692, 'val_mAP50': 0.0062981206730937135, 'time_s': 26.5}
+02:30:49 [det] done val_mAP50=0.0063 test_mAP50=0.0032 deeppcb_F33=0.0280 (48.0s)
+02:30:49 start det template_aware f=0.25 s=0
+02:30:50 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.25 seed=0 | 228 train images, 1577 boxes
+02:31:02 [det] {'iter': 20, 'loss': 0.894416955858469, 'val_mAP50': 0.0033079396068672654, 'time_s': 11.9}
+02:31:14 [det] {'iter': 40, 'loss': 0.5165692567825317, 'val_mAP50': 0.012669934526492727, 'time_s': 23.3}
+02:31:32 [det] done val_mAP50=0.0127 test_mAP50=0.0067 deeppcb_F33=0.0369 (41.2s)
+02:31:32 start det random f=1.0 s=0
+02:31:34 [det] init=random frac=1.0 seed=0 | 900 train images, 6202 boxes
+02:31:46 [det] {'iter': 20, 'loss': 0.9269788414239883, 'val_mAP50': 0.001149116912185339, 'time_s': 12.5}
+02:31:58 [det] {'iter': 40, 'loss': 0.5252723872661591, 'val_mAP50': 0.023620458366126015, 'time_s': 24.5}
+02:32:16 [det] done val_mAP50=0.0236 test_mAP50=0.0105 deeppcb_F33=0.0494 (42.1s)
+02:32:16 start det imagenet f=1.0 s=0
+02:32:18 [det] init=imagenet frac=1.0 seed=0 | 900 train images, 6202 boxes
+02:32:31 [det] {'iter': 20, 'loss': 0.9963126122951508, 'val_mAP50': 6.246700961054942e-06, 'time_s': 12.2}
+02:32:43 [det] {'iter': 40, 'loss': 0.599169771373272, 'val_mAP50': 0.032488017053201305, 'time_s': 24.2}
+02:33:01 [det] done val_mAP50=0.0325 test_mAP50=0.0423 deeppcb_F33=0.0878 (42.2s)
+02:33:01 start det simclr f=1.0 s=0
+02:33:03 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
+02:33:16 [det] {'iter': 20, 'loss': 0.9289472803473473, 'val_mAP50': 9.134018475348816e-05, 'time_s': 12.5}
+02:33:28 [det] {'iter': 40, 'loss': 0.5096444725990296, 'val_mAP50': 0.010324734395880908, 'time_s': 24.5}
+02:33:46 [det] done val_mAP50=0.0103 test_mAP50=0.0043 deeppcb_F33=0.0326 (42.4s)
+02:33:46 start det template_aware f=1.0 s=0
+02:33:48 [det] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=1.0 seed=0 | 900 train images, 6202 boxes
+02:34:01 [det] {'iter': 20, 'loss': 0.9307136699557305, 'val_mAP50': 0.00020688241067967788, 'time_s': 12.8}
+02:34:13 [det] {'iter': 40, 'loss': 0.508269289135933, 'val_mAP50': 0.014323541100037323, 'time_s': 25.3}
+02:34:32 [det] done val_mAP50=0.0143 test_mAP50=0.0067 deeppcb_F33=0.0418 (43.6s)
+02:34:32 start pretrain template_pos
+02:34:33 [pretrain:template_pos] 4096 patches | clean 78.4% | differs 16.0%
+02:34:38 [pretrain:template_pos] epoch=1 loss=6.2893 pos_acc=0.0098 time_s=3.9000 knn_acc=0.8882 knn_macro_f1=0.8093
+02:34:38 start cls finetune template_pos f=0.02 s=0
+02:34:39 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=finetune | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:34:46 [cls] done val_f1=0.7877 test_f1=0.7649 acc=0.8752 (6.8s)
+02:34:46 start cls finetune template_pos f=0.1 s=0
+02:34:47 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=finetune | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:34:54 [cls] done val_f1=0.8518 test_f1=0.8414 acc=0.8976 (7.4s)
+02:34:54 start cls finetune template_pos f=0.25 s=0
+02:34:55 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=finetune | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:02 [cls] done val_f1=0.8518 test_f1=0.8565 acc=0.9105 (7.1s)
+02:35:02 start cls finetune template_pos f=1.0 s=0
+02:35:02 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=finetune | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:35:10 [cls] done val_f1=0.8505 test_f1=0.8250 acc=0.8982 (7.2s)
+02:35:10 start cls linear random f=0.02 s=0
+02:35:10 [cls] init=random frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:35:11 [cls] done val_f1=0.5726 test_f1=0.5543 acc=0.7087 (0.8s)
+02:35:11 start cls linear imagenet f=0.02 s=0
+02:35:12 [cls] init=imagenet frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:35:13 [cls] done val_f1=0.5627 test_f1=0.5437 acc=0.6810 (0.9s)
+02:35:13 start cls linear simclr f=0.02 s=0
+02:35:13 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:35:14 [cls] done val_f1=0.4855 test_f1=0.4719 acc=0.6545 (0.8s)
+02:35:14 start cls linear template_aware f=0.02 s=0
+02:35:15 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:35:16 [cls] done val_f1=0.4945 test_f1=0.4860 acc=0.6516 (0.8s)
+02:35:16 start cls linear template_pos f=0.02 s=0
+02:35:17 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.02 seed=0 mode=linear | 450 patches from 20 images | counts=[300, 27, 16, 30, 23, 28, 26]
+02:35:17 [cls] done val_f1=0.4907 test_f1=0.4823 acc=0.6468 (0.8s)
+02:35:17 start cls linear random f=0.1 s=0
+02:35:18 [cls] init=random frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:35:19 [cls] done val_f1=0.6878 test_f1=0.6748 acc=0.7950 (1.2s)
+02:35:19 start cls linear imagenet f=0.1 s=0
+02:35:20 [cls] init=imagenet frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:35:21 [cls] done val_f1=0.6877 test_f1=0.6768 acc=0.7896 (1.2s)
+02:35:21 start cls linear simclr f=0.1 s=0
+02:35:22 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:35:23 [cls] done val_f1=0.6026 test_f1=0.5909 acc=0.7239 (1.2s)
+02:35:23 start cls linear template_aware f=0.1 s=0
+02:35:24 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:35:25 [cls] done val_f1=0.6092 test_f1=0.6020 acc=0.7387 (1.2s)
+02:35:25 start cls linear template_pos f=0.1 s=0
+02:35:25 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.1 seed=0 mode=linear | 1965 patches from 92 images | counts=[1310, 120, 92, 139, 108, 101, 95]
+02:35:27 [cls] done val_f1=0.6200 test_f1=0.6037 acc=0.7338 (1.2s)
+02:35:27 start cls linear random f=0.25 s=0
+02:35:27 [cls] init=random frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:29 [cls] done val_f1=0.7446 test_f1=0.7181 acc=0.8276 (1.9s)
+02:35:29 start cls linear imagenet f=0.25 s=0
+02:35:30 [cls] init=imagenet frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:32 [cls] done val_f1=0.7235 test_f1=0.7030 acc=0.8152 (2.0s)
+02:35:32 start cls linear simclr f=0.25 s=0
+02:35:33 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:35 [cls] done val_f1=0.6670 test_f1=0.6409 acc=0.7722 (2.1s)
+02:35:35 start cls linear template_aware f=0.25 s=0
+02:35:36 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:38 [cls] done val_f1=0.6640 test_f1=0.6361 acc=0.7677 (1.9s)
+02:35:38 start cls linear template_pos f=0.25 s=0
+02:35:38 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=0.25 seed=0 mode=linear | 4731 patches from 228 images | counts=[3154, 291, 212, 332, 270, 233, 239]
+02:35:40 [cls] done val_f1=0.6606 test_f1=0.6512 acc=0.7653 (1.7s)
+02:35:40 start cls linear random f=1.0 s=0
+02:35:40 [cls] init=random frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:35:45 [cls] done val_f1=0.8218 test_f1=0.7930 acc=0.8771 (4.8s)
+02:35:45 start cls linear imagenet f=1.0 s=0
+02:35:46 [cls] init=imagenet frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:35:51 [cls] done val_f1=0.7925 test_f1=0.7658 acc=0.8592 (4.8s)
+02:35:51 start cls linear simclr f=1.0 s=0
+02:35:52 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\simclr\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:35:56 [cls] done val_f1=0.7262 test_f1=0.7071 acc=0.8193 (4.8s)
+02:35:56 start cls linear template_aware f=1.0 s=0
+02:35:57 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_aware\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:36:02 [cls] done val_f1=0.7172 test_f1=0.7035 acc=0.8150 (4.7s)
+02:36:02 start cls linear template_pos f=1.0 s=0
+02:36:02 [cls] init=C:\Users\divya\Desktop\DL EL\runs\quick\pretrain\template_pos\encoder.pt frac=1.0 seed=0 mode=linear | 18606 patches from 900 images | counts=[12404, 1165, 935, 1242, 1018, 907, 935]
+02:36:07 [cls] done val_f1=0.7362 test_f1=0.7061 acc=0.8179 (4.7s)
+02:36:07 stage all finished

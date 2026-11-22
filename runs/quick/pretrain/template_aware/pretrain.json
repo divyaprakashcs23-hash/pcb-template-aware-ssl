@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "mode": "template_aware",
+    "epochs": 1,
+    "batch_size": 512,
+    "lr": 0.001,
+    "tau": 0.2,
+    "p_template": 0.5,
+    "hard_weight": 1.0,
+    "n_patches": 4096,
+    "seed": 0,
+    "init": "random"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 6.2585126757621765,
+      "pos_acc": 0.00927734375,
+      "time_s": 2.3,
+      "hard_gap": 0.04376919781789183,
+      "knn_acc": 0.8877297565822156,
+      "knn_macro_f1": 0.8023867054705937
+    }
+  ]
+}

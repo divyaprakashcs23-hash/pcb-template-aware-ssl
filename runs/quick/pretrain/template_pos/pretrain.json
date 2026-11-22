@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "mode": "template_pos",
+    "epochs": 1,
+    "batch_size": 512,
+    "lr": 0.001,
+    "tau": 0.2,
+    "p_template": 0.5,
+    "hard_weight": 1.0,
+    "n_patches": 4096,
+    "seed": 0,
+    "init": "random"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 6.2893112897872925,
+      "pos_acc": 0.009765625,
+      "time_s": 3.9,
+      "knn_acc": 0.8882265275707899,
+      "knn_macro_f1": 0.8093102226956178
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+*.egg-info/
+.pytest_cache/
+.gradio/
+# model weights are too large for GitHub; metrics.json and logs are kept
+runs/**/*.pt
+runs/**/*.pth
+*.npz
+~$*.docx
